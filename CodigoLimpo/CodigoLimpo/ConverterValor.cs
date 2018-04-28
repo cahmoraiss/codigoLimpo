@@ -14,11 +14,19 @@ namespace CodigoLimpo
         {
         }
 
-        public string ConverterValorPorExtenso(decimal valor)
+        public string ConverterValorPorExtenso(double valor)
         {            
-            if (valor == 1)
+            if (valor >= 1 && valor <= 9)
             {
-                valorPorExtenso = "Um real";                
+                switch (valor.ToString())
+                {
+                    case "1":
+                        valorPorExtenso = "um";
+                    break;
+                    case "2":
+                        valorPorExtenso = "dois";
+                    break;
+                    }                    
             }
             return valorPorExtenso;
         }        
