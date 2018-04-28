@@ -9,26 +9,52 @@ namespace CodigoLimpo
     public class ConverterValor
     {
         private string valorPorExtenso;
+        public enum enmValores
+        {
+            Zero = 0,
+            Um,
+            Dois,
+            Tres,
+            Quatro,
+            Cinco,
+            Seis,
+            Sete,
+            Oito,
+            Nove,
+            Dez,
+            Onze,
+            Doze,
+            Treze,
+            Quatroze,
+            Quinze,
+            Dezesseis,
+            Dezesete,
+            Dezoite,
+            Dezenove
+            
+        }
+
+        public string[] valores  = { "zero", "um", "tres", "quatro"};
+        
 
         public ConverterValor()
         {
         }
-
-        public string ConverterValorPorExtenso(double valor)
-        {            
-            if (valor >= 1 && valor <= 9)
+        
+        public void blah(double valor)
+        {
+            switch(valor.ToString().Length)
             {
-                switch (valor.ToString())
-                {
-                    case "1":
-                        valorPorExtenso = "um";
+                case 1:
+                    valorPorExtenso = valores[(int)valor];
                     break;
-                    case "2":
-                        valorPorExtenso = "dois";
-                    break;
-                    }                    
+
+
             }
-            return valorPorExtenso;
-        }        
+            
+
+        }
+
+     
     }
 }
