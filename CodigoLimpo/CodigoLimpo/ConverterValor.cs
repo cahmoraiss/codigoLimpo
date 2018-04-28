@@ -36,7 +36,8 @@ namespace CodigoLimpo
 
         public string[] valoresAteNove  = { "zero", "um","dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove"};
         public string[] valoresAteDezenove = { "dez", "onze", "doze", "treze", "quatroze", "quinze", "dezeseis", "dezesete", "dezoito", "dezenove" };
-        public string[] valoresDecimais = { "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa" };
+        public string[] valoresDecimais = {"semvalor", "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa" };
+        public string[] unidadesMonetarias = { "centavo", "centavos", "real", "reais" };
 
         public ConverterValor()
         {
@@ -56,7 +57,7 @@ namespace CodigoLimpo
                     }
                     else
                     {
-                        valorPorExtenso = valoresDecimais[(int)valor];
+                        //valorPorExtenso = valoresDecimais[(int)valor];
                     }
                     break;
             }
@@ -64,6 +65,33 @@ namespace CodigoLimpo
             return valorPorExtenso;
         }
 
-     
+        public string retornarUnidadeMonetariaReal(double valor)
+        {
+            int inteiro = (int)valor;
+            double centavos = valor - inteiro;
+
+            if (inteiro == 1)
+                return unidadesMonetarias[2];
+            else if (inteiro > 1)
+                return unidadesMonetarias[3];
+
+            return "";
+        }
+
+       
+
+        private string retornarUnidade(double valor)
+        {
+            int inteiro = (int)valor;
+            double centavos = valor - inteiro;
+
+            if (inteiro == 1)
+                return unidadesMonetarias[2];
+            else if (inteiro > 1)
+                return unidadesMonetarias[3];
+
+            return "";
+        }
+
     }
 }
