@@ -8,14 +8,19 @@ namespace CodigoLimpo
 {
     public class ConverterValor
     {
+        private string valorPorExtenso;
+
         public ConverterValor()
         {
         }
 
         public string ConverterValorPorExtenso(decimal valor)
-        {
-
-            return "";
+        {            
+            if (valor == 1)
+            {
+                valorPorExtenso = "Um real";                
+            }
+            return valorPorExtenso;
         }        
     }
 }

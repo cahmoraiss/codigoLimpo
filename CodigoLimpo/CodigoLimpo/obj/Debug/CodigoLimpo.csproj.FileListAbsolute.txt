@@ -1,1 +1,6 @@
 C:\Users\camila.morais\Documents\GitHub\codigoLimpo\CodigoLimpo\CodigoLimpo\bin\Debug\CodigoLimpo.exe.config
+C:\Users\camila.morais\Documents\GitHub\codigoLimpo\CodigoLimpo\CodigoLimpo\bin\Debug\CodigoLimpo.exe
+C:\Users\camila.morais\Documents\GitHub\codigoLimpo\CodigoLimpo\CodigoLimpo\bin\Debug\CodigoLimpo.pdb
+C:\Users\camila.morais\Documents\GitHub\codigoLimpo\CodigoLimpo\CodigoLimpo\obj\Debug\CodigoLimpo.csprojResolveAssemblyReference.cache
+C:\Users\camila.morais\Documents\GitHub\codigoLimpo\CodigoLimpo\CodigoLimpo\obj\Debug\CodigoLimpo.exe
+C:\Users\camila.morais\Documents\GitHub\codigoLimpo\CodigoLimpo\CodigoLimpo\obj\Debug\CodigoLimpo.pdb

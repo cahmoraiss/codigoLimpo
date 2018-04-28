@@ -10,7 +10,7 @@ namespace CodigoLimpo
     {
         static void Main(string[] args)
         {
-            decimal valor = 0;
+            decimal valor = 1;
             string valorExtenso;
             ConverterValor converterValor = new ConverterValor();
 
