@@ -10,11 +10,11 @@ namespace CodigoLimpo
     {
         static void Main(string[] args)
         {
-            double valor = 1.35;
+            double valor = 10;
             string valorExtenso;
             ConverterValor converterValor = new ConverterValor();
 
-            valorExtenso = converterValor.ConverterValorPorExtenso(valor);
+            valorExtenso = converterValor.retornarValorExtenso(valor);
         }
 
         

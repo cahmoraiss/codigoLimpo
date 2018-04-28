@@ -34,25 +34,34 @@ namespace CodigoLimpo
             
         }
 
-        public string[] valores  = { "zero", "um", "tres", "quatro"};
-        
+        public string[] valoresAteNove  = { "zero", "um","dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove"};
+        public string[] valoresAteDezenove = { "dez", "onze", "doze", "treze", "quatroze", "quinze", "dezeseis", "dezesete", "dezoito", "dezenove" };
+        public string[] valoresDecimais = { "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa" };
 
         public ConverterValor()
         {
         }
         
-        public void blah(double valor)
+        public string retornarValorExtenso(double valor)
         {
             switch(valor.ToString().Length)
             {
                 case 1:
-                    valorPorExtenso = valores[(int)valor];
+                    valorPorExtenso = valoresAteNove[(int)valor];
                     break;
-
-
+                case 2:
+                    if (valor < 20)
+                    {
+                        valorPorExtenso = valoresAteDezenove[(int)valor-10];
+                    }
+                    else
+                    {
+                        valorPorExtenso = valoresDecimais[(int)valor];
+                    }
+                    break;
             }
-            
 
+            return valorPorExtenso;
         }
 
      
