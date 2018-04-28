@@ -12,13 +12,11 @@ namespace CodigoLimpo
         {
             decimal valor = 0;
             string valorExtenso;
+            ConverterValor converterValor = new ConverterValor();
 
-            ConverterValorPorExtenso();
+            valorExtenso = converterValor.ConverterValorPorExtenso(valor);
         }
 
-        private static void ConverterValorPorExtenso()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
